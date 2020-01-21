@@ -1,7 +1,7 @@
 
 FROM java:openjdk-7-jdk
 
-MAINTAINER Andrew Jackson "anj@anjackson.net"
+MAINTAINER chazu "not@real.email"
 
 # update packages and install maven
 RUN \
@@ -23,4 +23,3 @@ EXPOSE 8080
 ENV JAVA_OPTS -Xmx2g
 
 CMD mvn -Dmaven.test.skip=true jetty:run-war
-
